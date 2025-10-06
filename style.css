@@ -1,0 +1,114 @@
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Tahoma", Arial, sans-serif;
+  background-color: #fffde7;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #66bb6a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav {
+  background-color: #66bb6a;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: #2e7d32;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 15px;
+  border: none;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1px;
+  padding-left: 5px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+form label input,
+form label select,
+form label textarea {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px 5px;
+  border: 1px #ccc solid;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+form input[type="text"],
+form input[type="checkbox"],
+form button {
+  margin-top: 1px;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>التطبيقات</h1>
+        <nav>
+            <a href="home.html">الرئيسية</a> |
+            <a href="aboutus.html">من نحن</a> |
+            <a href="apps.html">التطبيقات</a> |
+            <a href="add_app.html">إضافة تطبيق</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>قائمة التطبيقات</h2>
+        <table border="1" id="appsTable">
+            <tr>
+                <th>اسم التطبيق</th>
+                <th>الشركة المطورة</th>
+                <th>مجال الاستخدام</th>
+                <th>مجاني/غير مجاني</th>
+                <th>إختيار</th>
+            </tr>
+
+            <tr>
+                <td>ChatGPT</td>
+                <td>OpenAI</td>
+                <td>Education</td>
+                <td><input type="checkbox" checked disabled></td>
+                <td><input type="radio" name="appSelect" value="chatgpt"></td>
+            </tr>
+            <tr class="details-row" id="chatgpt" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://chatgpt.com" target="_blank">Chatgpt</a></p>
+                    <p>ChatGPT هو نموذج لغوي يساعد على توليد نصوص والإجابة عن الأسئلة.</p>
+                    <img src="./Media/ChatGPT.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/ChatGpt.MP4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gemini</td>
+                <td>Google</td>
+                <td>Education</td>
+                <td><input type="checkbox" disabled></td>
+                <td><input type="radio" name="appSelect" value="bard"></td>
+            </tr>
+            <tr class="details-row" id="bard" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://gemini.google.com/" target="_blank">Gemini</a></p>
+                    <p>Gemini هو الجيل الجديد من نماذج الذكاء الاصطناعي من Google.</p>
+                    <img src="./Media/Gemini.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/Gemini.MP4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <td>MidJourney</td>
+                <td>MidJourney Inc</td>
+                <td>Art & Design</td>
+                <td><input type="checkbox" disabled></td>
+                <td><input type="radio" name="appSelect" value="midjourney"></td>
+            </tr>
+            <tr class="details-row" id="midjourney" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://www.midjourney.com/" target="_blank">Midjourney</a></p>
+                    <p>MidJourney هو تطبيق يولد صور فنية من النصوص باستخدام الذكاء الاصطناعي.</p>
+                    <img src="./Media/Midjourney.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/Midjourney.MP4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grammarly</td>
+                <td>Grammarly Inc</td>
+                <td>Writing Assistant</td>
+                <td><input type="checkbox" checked disabled></td>
+                <td><input type="radio" name="appSelect" value="grammarly"></td>
+            </tr>
+            <tr class="details-row" id="grammarly" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://www.grammarly.com/" target="_blank">Grammarly</a></p>
+                    <p>Grammarly أداة تساعد في التدقيق اللغوي وتصحيح الأخطاء في النصوص الإنجليزية.</p>
+                    <img src="./Media/Grammarly.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/Grammarly.MP4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DeepL</td>
+                <td>DeepL SE</td>
+                <td>Translation</td>
+                <td><input type="checkbox" checked disabled></td>
+                <td><input type="radio" name="appSelect" value="deepl"></td>
+            </tr>
+            <tr class="details-row" id="deepl" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://www.deepl.com/en/translator" target="_blank">Deepl</a></p>
+                    <p>DeepL هو مترجم ذكي يوفر ترجمات دقيقة تعتمد على الذكاء الاصطناعي.</p>
+                    <img src="./Media/DeepL.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/DeepL.MP4" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button class="btn" style="width: 50%; margin: 0 auto;" onclick="showDetailsRow()">متابعة</button>
+    </main>
+
+    <footer>
+        <p>© 2025 - مجموعة طلاب IWB202</p>
+    </footer>
+</body>
+</html>
