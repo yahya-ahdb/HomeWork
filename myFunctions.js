@@ -85,13 +85,28 @@ function loadApps() {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>${app.name}</td>
-      <td>${app.company}</td>
-      <td><a href="${app.website}" target="_blank">${app.website}</a></td>
-      <td>${app.free}</td>
-      <td>${app.domain}</td>
-      <td>${app.description}</td>
-      <td><button class="delete-btn" onclick="deleteApp(${index})">🗑️ حذف</button></td>
+    <tr>
+    
+    <td>${app.name}</td>
+    <td>${app.company}</td>
+    <td><a href="${app.website}" target="_blank">${app.website}</a></td>
+    <td>${app.free}</td>
+    <td>${app.domain}</td>
+    <td>${app.description}</td>
+    <td><button class="delete-btn" onclick="deleteApp(${index})">🗑️ حذف</button></td>
+    </tr>
+
+    <tr class="details-row" id="bard" style="display:none;">
+                <td colspan="5">
+                    <p><a href="https://gemini.google.com/" target="_blank">${app.name}</a></p>
+                    <p>${app.description}</p>
+                    <img src="./Media/Gemini.svg" width="100">
+                    <video width="300" controls>
+                        <source src="./Media/Gemini.MP4" type="video/mp4">
+                    </video>
+                </td>
+            </tr>
+    
     `;
 
     tbody.appendChild(row);

@@ -34,7 +34,7 @@
                 <td>OpenAI</td>
                 <td>Education</td>
                 <td><input type="checkbox" checked disabled></td>
-                <td><input type="radio" name="appSelect" value="chatgpt"></td>
+                <td><input type="radio" onchange="showDetailsRow()" name="appSelect" value="chatgpt"></td>
             </tr>
             <tr class="details-row" id="chatgpt" style="display:none;">
                 <td colspan="5">
@@ -43,7 +43,6 @@
                     <img src="./Media/ChatGPT.svg" width="100">
                     <video width="300" controls>
                         <source src="./Media/ChatGpt.MP4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
                     </video>
                 </td>
             </tr>
@@ -53,7 +52,7 @@
                 <td>Google</td>
                 <td>Education</td>
                 <td><input type="checkbox" disabled></td>
-                <td><input type="radio" name="appSelect" value="bard"></td>
+                <td><input type="radio" onchange="showDetailsRow()" name="appSelect" value="bard"></td>
             </tr>
             <tr class="details-row" id="bard" style="display:none;">
                 <td colspan="5">
@@ -62,7 +61,6 @@
                     <img src="./Media/Gemini.svg" width="100">
                     <video width="300" controls>
                         <source src="./Media/Gemini.MP4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
                     </video>
                 </td>
             </tr>
@@ -72,7 +70,7 @@
                 <td>MidJourney Inc</td>
                 <td>Art & Design</td>
                 <td><input type="checkbox" disabled></td>
-                <td><input type="radio" name="appSelect" value="midjourney"></td>
+                <td><input type="radio" onchange="showDetailsRow()" name="appSelect" value="midjourney"></td>
             </tr>
             <tr class="details-row" id="midjourney" style="display:none;">
                 <td colspan="5">
@@ -81,7 +79,6 @@
                     <img src="./Media/Midjourney.svg" width="100">
                     <video width="300" controls>
                         <source src="./Media/Midjourney.MP4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
                     </video>
                 </td>
             </tr>
@@ -91,7 +88,7 @@
                 <td>Grammarly Inc</td>
                 <td>Writing Assistant</td>
                 <td><input type="checkbox" checked disabled></td>
-                <td><input type="radio" name="appSelect" value="grammarly"></td>
+                <td><input type="radio" onchange="showDetailsRow()" name="appSelect" value="grammarly"></td>
             </tr>
             <tr class="details-row" id="grammarly" style="display:none;">
                 <td colspan="5">
@@ -100,7 +97,6 @@
                     <img src="./Media/Grammarly.svg" width="100">
                     <video width="300" controls>
                         <source src="./Media/Grammarly.MP4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
                     </video>
                 </td>
             </tr>
@@ -110,7 +106,7 @@
                 <td>DeepL SE</td>
                 <td>Translation</td>
                 <td><input type="checkbox" checked disabled></td>
-                <td><input type="radio" name="appSelect" value="deepl"></td>
+                <td><input type="radio" onchange="showDetailsRow()" name="appSelect" value="deepl"></td>
             </tr>
             <tr class="details-row" id="deepl" style="display:none;">
                 <td colspan="5">
@@ -119,13 +115,11 @@
                     <img src="./Media/DeepL.svg" width="100">
                     <video width="300" controls>
                         <source src="./Media/DeepL.MP4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
                     </video>
                 </td>
             </tr>
         </table>
         <br>
-        <button class="btn" style="width: 50%; margin: 0 auto;" onclick="showDetailsRow()">متابعة</button>
     </main>
 
     <footer>
